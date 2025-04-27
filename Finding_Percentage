@@ -1,0 +1,17 @@
+if __name__ == '__main__':    # Given Code
+    n = int(input())
+    student_marks = {}
+    for _ in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+
+# we will code from here :
+    l1 = list(student_marks[query_name])        #list(a[b]), here we are converting set to list to obtain respective values
+    add = sum(l1)                               # add is a variable for the sum of all numerical values in l1
+    result = ( add/len(l1))                     # result is variable for the sum of all numerical value by the length of l1 list
+
+    print('%.2f'%result)
+
+     
