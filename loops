@@ -1,0 +1,6 @@
+if __name__ = "__main__":
+    n = int(input())
+#our code will start from here :
+    for i in range(n):  #using for loop with range function 
+       print (i**2)     # desired output was sqaure of inserted value, you can instead write i*i too.. it will give same value
+
